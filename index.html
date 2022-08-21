@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css link start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css link end -->
+    <title>Money Manager</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-center text-5xl mt-5">Calculate and manage your income and expenses!💰</h2>
+    </header>
+    <main class="mt-8">
+        <div class="grid grid-cols-2 w-3/4 mx-auto">
+            <!-- images div -->
+            <div class=" ml-10 my-auto">
+                <img class="rounded-lg" src="images/cropped.png" alt="">
+            </div>
+
+            <!-- main content div -->
+            <div class="w-3/4 mx-auto bg-blue-100 rounded-xl">
+                <!-- income input field start -->
+                <h3 class="text-3xl text-center mb-6 mt-8">Income</h3>
+                <p class="text-2xl text-center">Income: <input class="rounded-xl px-4" type="text" name="" id="income-input-field"></p>
+                <!-- income input field end -->
+
+                <!-- Expenses input field start -->
+                <h3 class="text-3xl text-center mb-6 mt-8">Expenses</h3>
+                <!-- food input field -->
+                <p class="text-2xl text-center mb-6">Food: <input class="rounded-xl px-4" type="text" name="" id="food-input-value"></p>
+
+                <!-- Rents input field -->
+                <p class="text-2xl text-center mb-6">Rents: <input class="rounded-xl px-4" type="text" name="" id="rents-input-value"></p>
+
+                <!-- clothes input field -->
+                <p class="text-2xl text-center">Clothes: <input class="rounded-xl px-4" type="text" name="" id="clothes-input-value"></p>
+
+                <!-- calculate button -->
+                <div class="w-3/12 mx-auto">
+                    <button id="btn-calculate" class="bg-blue-500 text-white text-2xl px-4 py-2 rounded-lg mt-6">Calculate</button>
+                </div>
+
+                <!-- total expenses and balance area -->
+                <h2 class="text-2xl text-center mt-6">Total Expenses:<span id="amount-expenses">0000</span></h2>
+                <h2 class="text-2xl text-center mt-6">Balance:<span id="balance-after-expenses">0000</span></h2>
+
+                <!-- save area -->
+                <p class="text-2xl text-center">Save: <input class="w-3/12 mr-3 rounded-lg px-4" type="text" name="" id="savings-input-value"> <span class="mr-3">%</span>
+                <button id="btn-save" class="bg-blue-500 text-white text-2xl px-4 py-2 rounded-lg mt-6">Save</button>
+                </p>
+
+                <!-- total savings and balance area -->
+                <h2 class="text-2xl text-center mt-6">Total Savings:<span id="total-savings">0000</span></h2>
+                <h2 class="text-2xl text-center mt-6 mb-5">Balance:<span id="balance-after-savings">0000</span></h2>
+            </div>
+        </div>
+    </main>
+    <!-- js file link start -->
+    <script src="scripts/index.js"></script>
+    <!-- js file link end -->
+  </body>
+</html>
